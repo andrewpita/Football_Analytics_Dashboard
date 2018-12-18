@@ -23,8 +23,10 @@ shinyUI(fluidPage(theme = shinytheme("sandstone"),
   
   selectInput("GPsp", label = "Plot Type", choices = c("xGP", "xSP")),
   
-  textOutput("possession"),
+  selectInput("fullGame", label = "Full Game or Play by Play", choices = c("Full Game",
+              "Play by Play")),
   
+  textOutput("possession"),
   
   plotOutput("plots"),
   
